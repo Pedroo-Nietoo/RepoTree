@@ -1,0 +1,155 @@
+$fontePadrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$cinzaEscuro: #525252;
+$corLinkedIn: #0077B5;
+$corGitHub: #211F1F;
+$corInstagram: #FFF;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #181818;
+
+    // background-image: url(https://i.pinimg.com/550x/8b/64/c7/8b64c72a765eff8abe04b45155e36bf1.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
+    // filter: blur(12px);
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // todo
+
+        #fotoPerfil {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            margin-top: -180px;
+        }
+
+        #username {
+            text-align: center;
+            color: #FFF;
+            font-family: $fontePadrao;
+        }
+
+        #descricao {
+            text-align: center;
+            color: #555;
+            font-family: $fontePadrao;
+            margin-top: -40px;
+            margin-bottom: 80px;
+        }
+    }
+
+    .container {
+        margin-top: 40vh;
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 3;
+        justify-content: center;
+
+        height: 50vh;
+        width: 50vw;
+
+        .itemLinkedIn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 8vh;
+            width: 40vw;
+            margin: 20px;
+            border-radius: 2px;
+            color: $cinzaEscuro;
+            font-family: $fontePadrao;
+            font-size: 20px;
+            font-weight: 600;
+            transition: .5s;
+            background-color: #FFF;
+        }
+
+        .itemGitHub{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 8vh;
+            width: 40vw;
+            margin: 20px;
+            border-radius: 2px;
+            color: $cinzaEscuro;
+            font-family: $fontePadrao;
+            font-size: 20px;
+            font-weight: 600;
+            transition: .5s;
+            background-color: #FFF;
+        }
+
+        .itemInstagram{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 8vh;
+            width: 40vw;
+            margin: 20px;
+            border-radius: 2px;
+            color: $cinzaEscuro;
+            font-family: $fontePadrao;
+            font-size: 20px;
+            font-weight: 600;
+            transition: .5s;
+            background-color: #FFF;
+        }
+
+        .itemLinkedIn:hover {
+            transform: scale(1.1, 1.1);
+            background: linear-gradient(to right, $corLinkedIn, #00A0DC);
+            filter: drop-shadow(0 0 0.75em #00A0DC);
+            color: #FFF;
+            font-size: 21px;
+            transition: .5s;
+        }
+
+        .itemLinkedIn:active {
+            transform: scale(0.9, 0.9);
+        }
+
+        .itemLinkedIn::selection {
+            background-color: $corLinkedIn;
+            color: #FFF;
+        }
+
+        .itemGitHub:hover {
+            transform: scale(1.1, 1.1);
+            background: linear-gradient(to right, $corGitHub, #3b3b3b);
+            filter: drop-shadow(0 0 0.75em #3b3b3b);
+            color: #FFF;
+            font-size: 21px;
+            transition: .5s;
+        }
+
+        .itemGitHub:active {
+            transform: scale(0.9, 0.9);
+        }
+
+        .itemGitHub::selection {
+            background-color: $corGitHub;
+            color: #FFF;
+        }
+
+        .itemInstagram:hover {
+            transform: scale(1.1, 1.1);
+            background: linear-gradient(to right, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+            filter: drop-shadow(0 0 0.75em #C13584);
+            color: #FFF;
+            font-size: 21px;
+            transition: .5s;
+        }
+
+        .itemInstagram:active {
+            transform: scale(0.9, 0.9);
+        }
+    }
+}
