@@ -3,18 +3,18 @@ var itemGitHub = document.querySelector(".itemGitHub");
 var itemInstagram = document.querySelector(".itemInstagram");
 
 itemLinkedIn.addEventListener("mouseover", function () {
-    itemGitHub.style.backgroundColor = "#202020";
-    itemInstagram.style.backgroundColor = "#202020";
+    itemGitHub.style.backgroundColor = "#777";
+    itemInstagram.style.backgroundColor = "#777";
 });
 
 itemGitHub.addEventListener("mouseover", function () {
-    itemLinkedIn.style.backgroundColor = "#202020";
-    itemInstagram.style.backgroundColor = "#202020";
+    itemLinkedIn.style.backgroundColor = "#777";
+    itemInstagram.style.backgroundColor = "#777";
 });
 
 itemInstagram.addEventListener("mouseover", function () {
-    itemLinkedIn.style.backgroundColor = "#202020";
-    itemGitHub.style.backgroundColor = "#202020";
+    itemLinkedIn.style.backgroundColor = "#777";
+    itemGitHub.style.backgroundColor = "#777";
 });
 
 itemLinkedIn.addEventListener("mouseout", function () {

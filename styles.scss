@@ -9,39 +9,34 @@ body {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background-color: #181818;
+    background-image: url('imgs/Fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    // background-image: url(https://i.pinimg.com/550x/8b/64/c7/8b64c72a765eff8abe04b45155e36bf1.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-
-    // filter: blur(12px);
     header {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        // todo
 
         #fotoPerfil {
             border-radius: 50%;
-            height: 150px;
-            width: 150px;
+            height: 10rem;
+            width: 10rem;
             margin-top: -180px;
         }
 
-        #username {
+        #username,
+        #descricao {
             text-align: center;
             color: #FFF;
             font-family: $fontePadrao;
+            filter: drop-shadow(0 0 0.75rem #202020);
         }
 
         #descricao {
-            text-align: center;
-            color: #555;
-            font-family: $fontePadrao;
             margin-top: -40px;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
     }
 
@@ -55,38 +50,8 @@ body {
         height: 50vh;
         width: 50vw;
 
-        .itemLinkedIn{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 8vh;
-            width: 40vw;
-            margin: 20px;
-            border-radius: 2px;
-            color: $cinzaEscuro;
-            font-family: $fontePadrao;
-            font-size: 20px;
-            font-weight: 600;
-            transition: .5s;
-            background-color: #FFF;
-        }
-
-        .itemGitHub{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 8vh;
-            width: 40vw;
-            margin: 20px;
-            border-radius: 2px;
-            color: $cinzaEscuro;
-            font-family: $fontePadrao;
-            font-size: 20px;
-            font-weight: 600;
-            transition: .5s;
-            background-color: #FFF;
-        }
-
+        .itemLinkedIn,
+        .itemGitHub,
         .itemInstagram{
             display: flex;
             justify-content: center;
@@ -101,6 +66,7 @@ body {
             font-weight: 600;
             transition: .5s;
             background-color: #FFF;
+            // opacity: 75%;
         }
 
         .itemLinkedIn:hover {
@@ -109,6 +75,7 @@ body {
             filter: drop-shadow(0 0 0.75em #00A0DC);
             color: #FFF;
             font-size: 21px;
+            opacity: 100%;
             transition: .5s;
         }
 
@@ -127,6 +94,7 @@ body {
             filter: drop-shadow(0 0 0.75em #3b3b3b);
             color: #FFF;
             font-size: 21px;
+            opacity: 100%;
             transition: .5s;
         }
 
@@ -145,6 +113,7 @@ body {
             filter: drop-shadow(0 0 0.75em #C13584);
             color: #FFF;
             font-size: 21px;
+            opacity: 100%;
             transition: .5s;
         }
 

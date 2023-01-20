@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="script.js">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/Icon.png">
     <!-- todo Add meta tags -->
     <title>RepoTree</title>
 </head>
@@ -15,8 +15,7 @@
     <div class="container">
 
         <header>
-            <img src="https://avatars.githubusercontent.com/u/102625628?v=4" alt="Foto de perfil" id="fotoPerfil" />
-            <!-- todo Profile img, name and description -->
+            <img src="imgs/Foto.png" alt="Foto de perfil" id="fotoPerfil" />
             <h1 id="username">Pedro Nieto</h1>
             <br>
             <span id="descricao">Entusiasta de programação e eletrônica</span>
@@ -34,46 +33,7 @@
             <span>Instagram</span>
         </div>
     </div>
-
-    <script>
-        var itemLinkedIn = document.querySelector(".itemLinkedIn");
-        var itemGitHub = document.querySelector(".itemGitHub");
-        var itemInstagram = document.querySelector(".itemInstagram");
-
-        itemLinkedIn.addEventListener("mouseover", function () {
-            itemGitHub.style.backgroundColor = "#202020";
-            itemInstagram.style.backgroundColor = "#202020";
-        });
-
-        itemGitHub.addEventListener("mouseover", function () {
-            itemLinkedIn.style.backgroundColor = "#202020";
-            itemInstagram.style.backgroundColor = "#202020";
-        });
-
-        itemInstagram.addEventListener("mouseover", function () {
-            itemLinkedIn.style.backgroundColor = "#202020";
-            itemGitHub.style.backgroundColor = "#202020";
-        });
-
-        itemLinkedIn.addEventListener("mouseout", function () {
-            itemLinkedIn.style.backgroundColor = "#fff";
-            itemGitHub.style.backgroundColor = "#fff";
-            itemInstagram.style.backgroundColor = "#fff";
-        });
-
-        itemGitHub.addEventListener("mouseout", function () {
-            itemLinkedIn.style.backgroundColor = "#fff";
-            itemGitHub.style.backgroundColor = "#fff";
-            itemInstagram.style.backgroundColor = "#fff";
-        });
-
-        itemInstagram.addEventListener("mouseout", function () {
-            itemLinkedIn.style.backgroundColor = "#fff";
-            itemGitHub.style.backgroundColor = "#fff";
-            itemInstagram.style.backgroundColor = "#fff";
-        });
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
