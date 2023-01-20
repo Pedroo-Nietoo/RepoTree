@@ -39,6 +39,9 @@ body .container {
   height: 50vh;
   width: 50vw;
 }
+body .container a {
+  text-decoration: none;
+}
 body .container .itemLinkedIn,
 body .container .itemGitHub,
 body .container .itemInstagram {
@@ -56,55 +59,29 @@ body .container .itemInstagram {
   transition: 0.5s;
   background-color: #FFF;
 }
-body .container .itemLinkedIn:hover {
-  transform: scale(1.1, 1.1);
-  background: linear-gradient(to right, #0077B5, #00A0DC);
-  filter: drop-shadow(0 0 0.75em #00A0DC);
-  color: #FFF;
-  font-size: 21px;
-  opacity: 100%;
-  transition: 0.5s;
-}
-body .container .itemLinkedIn:active {
-  transform: scale(0.9, 0.9);
-}
-body .container .itemLinkedIn::-moz-selection {
-  background-color: #0077B5;
-  color: #FFF;
-}
-body .container .itemLinkedIn::selection {
-  background-color: #0077B5;
-  color: #FFF;
-}
-body .container .itemGitHub:hover {
-  transform: scale(1.1, 1.1);
-  background: linear-gradient(to right, #211F1F, #3b3b3b);
-  filter: drop-shadow(0 0 0.75em #3b3b3b);
-  color: #FFF;
-  font-size: 21px;
-  opacity: 100%;
-  transition: 0.5s;
-}
-body .container .itemGitHub:active {
-  transform: scale(0.9, 0.9);
-}
-body .container .itemGitHub::-moz-selection {
-  background-color: #211F1F;
-  color: #FFF;
-}
-body .container .itemGitHub::selection {
-  background-color: #211F1F;
-  color: #FFF;
-}
+body .container .itemLinkedIn:hover,
+body .container .itemGitHub:hover,
 body .container .itemInstagram:hover {
   transform: scale(1.1, 1.1);
-  background: linear-gradient(to right, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-  filter: drop-shadow(0 0 0.75em #C13584);
-  color: #FFF;
   font-size: 21px;
   opacity: 100%;
   transition: 0.5s;
+  color: #FFF;
 }
+body .container .itemLinkedIn:hover {
+  background: linear-gradient(to right, #0077B5, #00BBFF);
+  filter: drop-shadow(0 0 0.75em #00BBFF);
+}
+body .container .itemGitHub:hover {
+  background: linear-gradient(to right, #211F1F, #9F9F9F);
+  filter: drop-shadow(0 0 0.75em #9F9F9F);
+}
+body .container .itemInstagram:hover {
+  background: linear-gradient(to right, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+  filter: drop-shadow(0 0 0.75em #C13584);
+}
+body .container .itemLinkedIn:active,
+body .container .itemGitHub:active,
 body .container .itemInstagram:active {
   transform: scale(0.9, 0.9);
 }/*# sourceMappingURL=styles.css.map */
