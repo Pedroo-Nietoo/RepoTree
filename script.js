@@ -18,19 +18,16 @@ itemInstagram.addEventListener("mouseover", function () {
 });
 
 itemLinkedIn.addEventListener("mouseout", function () {
-    itemLinkedIn.style.backgroundColor = "#fff";
     itemGitHub.style.backgroundColor = "#fff";
     itemInstagram.style.backgroundColor = "#fff";
 });
 
 itemGitHub.addEventListener("mouseout", function () {
     itemLinkedIn.style.backgroundColor = "#fff";
-    itemGitHub.style.backgroundColor = "#fff";
     itemInstagram.style.backgroundColor = "#fff";
 });
 
 itemInstagram.addEventListener("mouseout", function () {
     itemLinkedIn.style.backgroundColor = "#fff";
     itemGitHub.style.backgroundColor = "#fff";
-    itemInstagram.style.backgroundColor = "#fff";
 });
