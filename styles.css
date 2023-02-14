@@ -84,4 +84,77 @@ body .container .itemLinkedIn:active,
 body .container .itemGitHub:active,
 body .container .itemInstagram:active {
   transform: scale(0.9, 0.9);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+  }
+  body header #fotoPerfil {
+    height: 8rem;
+    width: 8rem;
+    margin-top: -120px;
+  }
+  body header #username {
+    font-size: 24px;
+  }
+  body header #descricao {
+    font-size: 16px;
+    margin-top: -30px;
+  }
+  body .container {
+    margin-top: 20vh;
+    height: 50vh;
+    width: 90vw;
+  }
+  body .container .itemLinkedIn,
+  body .container .itemGitHub,
+  body .container .itemInstagram {
+    height: 8vh;
+    width: 80vw;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 2px;
+  }
+  body .container .itemLinkedIn:hover,
+  body .container .itemGitHub:hover,
+  body .container .itemInstagram:hover {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  body header #fotoPerfil {
+    height: 8rem;
+    width: 8rem;
+    margin-top: -120px;
+  }
+  body header #username {
+    font-size: 24px;
+  }
+  body header #descricao {
+    font-size: 16px;
+    margin-top: -30px;
+  }
+  body .container {
+    margin-top: 20vh;
+    height: 50vh;
+    width: 90vw;
+  }
+  body .container .itemLinkedIn,
+  body .container .itemGitHub,
+  body .container .itemInstagram {
+    height: 8vh;
+    width: 80vw;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 2px;
+  }
+  body .container .itemLinkedIn:hover,
+  body .container .itemGitHub:hover,
+  body .container .itemInstagram:hover {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=styles.css.map */
