@@ -3,9 +3,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background-image: url("imgs/Fundo.png");
+  background-image: url("imgs/FundoPc.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 body header {
   display: flex;
@@ -86,9 +86,12 @@ body .container .itemInstagram:active {
   transform: scale(0.9, 0.9);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   body {
-    height: 100vh;
+    height: 80vh;
+    background-image: url("imgs/FundoPc.png");
+    background-repeat: no-repeat;
+    background-size: auto;
   }
   body header #fotoPerfil {
     height: 8rem;
@@ -122,9 +125,12 @@ body .container .itemInstagram:active {
     font-size: 18px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   body {
-    height: 100vh;
+    height: 80vh;
+    background-image: url("imgs/FundoCelular.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   body header #fotoPerfil {
     height: 8rem;
