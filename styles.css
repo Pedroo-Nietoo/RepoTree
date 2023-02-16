@@ -5,7 +5,7 @@ body {
   height: 80vh;
   background-image: url("imgs/FundoPc.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 body header {
   display: flex;
