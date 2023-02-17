@@ -1,8 +1,8 @@
-<div aling="center">
-    <h1>RepoTree</h1>
-</div>
+# RepoTree
 
-<hr>
+### Onde acessar?
+Para acessar o site [RepoTree](https://pedroo-nietoo.github.io/RepoTree/), basta clicar no link em azul ou acessar o site https://pedroo-nietoo.github.io/RepoTree/.
 
-<h3>Onde acessar?</h3>
-<p>Acesse o site <code>#EM BREVE#</code> para acessar o projeto.</p>
+### To-do
+- Arrumar _media queries_
+- Criar wallpaper para tablet e arrumar o de celular
