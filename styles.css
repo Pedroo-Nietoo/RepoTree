@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background-image: url("imgs/FundoPc.png");
+  background-image: url("imgs/FundoPC.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -104,7 +104,7 @@ body .container .itemInstagram:active {
 @media only screen and (max-width: 768px) {
   body {
     height: 80vh;
-    background-image: url("imgs/FundoPc.png");
+    background-image: url("imgs/FundoPC.png");
     background-repeat: no-repeat;
     background-size: auto;
   }
