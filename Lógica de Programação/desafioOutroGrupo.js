@@ -23,10 +23,10 @@ while (minutoFinal == "") {
     minutoFinal = prompt("Favor preencher os campos\nDigite o minuto final");
 }
 
-var opcao = prompt(`As horas digitadas são:\nHora e minutos iniciais: ${horaInicial}:${horaFinal}\nHora e minutos finais: ${horaFinal}:${minutoFinal}\n\nVocê deseja Somar ou Subtrair as horas?`)
+var opcao = prompt(`As horas digitadas são:\nHora e minutos iniciais: ${horaInicial}:${minutoInicial}\nHora e minutos finais: ${horaFinal}:${minutoFinal}\n\nVocê deseja somar ou subtrair as horas?`)
 
 while (opcao == "") {
-    opcao = prompt(`As horas digitadas são:\nHora e minutos iniciais: ${horaInicial}:${horaFinal}\nHora e minutos finais: ${horaFinal}:${minutoFinal}\n\nVocê deseja Somar ou Subtrair as horas?`)
+    opcao = prompt(`As horas digitadas são:\nHora e minutos iniciais: ${horaInicial}:${minutoInicial}\nHora e minutos finais: ${horaFinal}:${minutoFinal}\n\nVocê deseja somar ou subtrair as horas?`)
 }
 
 switch (opcao) {
@@ -48,12 +48,12 @@ switch (opcao) {
         break;
     default:
         alert("Favor selecionar uma opção correta");
-        opcao = prompt(`As horas digitadas são:\nHora e minutos iniciais: ${horaInicial}:${horaFinal}\nHora e minutos finais: ${horaFinal}:${minutoFinal}\n\nVocê deseja Somar ou Subtrair as horas?`)
+        opcao = prompt(`As horas digitadas são:\nHora e minutos iniciais: ${horaInicial}:${minutoInicial}\nHora e minutos finais: ${horaFinal}:${minutoFinal}\n\nVocê deseja somar ou subtrair as horas?`)
 }
 
 function somarHoras() {
-    resultadoHora = horaFinal + horaInicial;
-    resultadoMinuto = minutoFinal + minutoInicial;
+    resultadoHora = parseInt(horaFinal) + parseInt(horaInicial);
+    resultadoMinuto = parseInt(minutoFinal) + parseInt(minutoInicial);
 
     while (resultadoMinuto > 59) {
         resultadoMinuto -= 60;
@@ -64,22 +64,23 @@ function somarHoras() {
 }
 
 function subtrairHoras() {
-    if (horaInicial >= horaFinal) {
-        resultadoHora = horaInicial - horaFinal;
+    var horaInicialNum = parseInt(horaInicial);
+    var horaFinalNum = parseInt(horaFinal);
+    var minutoInicialNum = parseInt(minutoInicial);
+    var minutoFinalNum = parseInt(minutoFinal);
+
+    if (horaInicialNum > horaFinalNum || (horaInicialNum == horaFinalNum && minutoInicialNum > minutoFinalNum)) {
+        resultadoHora = horaInicialNum - horaFinalNum;
+        resultadoMinuto = minutoInicialNum - minutoFinalNum;
     } else {
-        resultadoHora = horaFinal - horaInicial;
+        resultadoHora = horaFinalNum - horaInicialNum;
+        resultadoMinuto = minutoFinalNum - minutoInicialNum;
     }
 
-    if (minutoInicial >= minutoFinal) {
-        resultadoMinuto = minutoInicial - minutoFinal;
-    } else {
-        resultadoMinuto = minutoFinal - minutoInicial;
-    }
-
-    while (resultadoMinuto > 59) {
+    while (resultadoMinuto < 0) {
         resultadoMinuto += 60;
         resultadoHora--;
     }
 
-    alert(`O resultado da subtração de ${horaInicial}:${minutoInicial} menos ${horaFinal}:${minutoFinal} é:\n${resultadoHora}:${resultadoMinuto}`);
+    alert(`O resultado da subtração de ${horaInicial}:${minutoInicial} e ${horaFinal}:${minutoFinal} é\n${resultadoHora}:${resultadoMinuto}`);
 }
