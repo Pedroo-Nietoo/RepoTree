@@ -5,72 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Site/css/style.css">
-    <link rel="icon" href="Site/img/icon.png">
-    <title>Aprendizagem Industrial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="imgs/icon.png">
+    <meta name="author" content="@Pedroo-Nietoo">
+    <meta name="keywords" content="Redes sociais, site, links">
+    <meta name="description" content="Meu site para reunir os links das minhas redes sociais! Acesse já.">
+    <meta name="application-name" content="RepoTree - Pedroo-Nietoo">
+    <meta name="generator" content="Visual Studio Code (VSCode)">
+    <title>RepoTree</title>
 </head>
 
 <body>
     <div class="container">
-        <h1 id="titulo">Aprendizagem Industrial</h1>
-        <h3 id="cargo">Programador Back-End</h3>
-        <a href="#container-repos">
-            <button id="btnComecar" onclick="scrollToId('teste')">Começar</button>
+
+        <header>
+            <img src="imgs/Foto.png" alt="Foto de perfil" id="fotoPerfil" />
+            <h1 id="username">Pedro Nieto</h1>
+            <br>
+            <span id="descricao">Entusiasta de programação e eletrônica</span>
+        </header>
+
+        <a href="https://www.linkedin.com/in/pedroo-nietoo/" target="_blank">
+            <div class="itemLinkedIn">
+                <span class="textoItem">LinkedIn</span>
+            </div>
         </a>
-    </div>
 
-    <video id="video-bg" autoplay muted loop>
-        <source src="Site/video/videoIntelbras.mp4">
-    </video>
-
-    <div id="container-repos">
-        <div class="repositorio">
-            <img class="svg" src="Site/svg/blob1.svg" alt="Blob">
-            <h1 class="titulo">Versionamento</h1>
-
-            <p class="descricao">Meu repositório de Versionamento, onde estudamos sobre <span
-                    class="tecnologias">Git</span> e <span class="tecnologias">GitHub</span>, além do báisco de <span
-                    class="tecnologias">HTML</span> e <span class="tecnologias">CSS</span> para fins de Layout</p>
-
-            <div class="alinharBtn" id="btnMargin">
-                <button class="descricao versionamento" onclick="versionamento()">Acessar</button>
-            </div>
+        <a href="https://github.com/Pedroo-Nietoo" target="_blank">
+        <div class="itemGitHub">
+            <span>GitHub</span>
         </div>
-
-        <div class="repositorio">
-            <img class="svg" src="Site/svg/blob2.svg" alt="Blob">
-            <h1 class="titulo descricao">Lógica de Programação</h1>
-
-            <p class="descricao">Meu repositório de Lógica de Programação, onde aprendemos os conceitos de lógica de
-                programação através de <span class="tecnologias">Portugol</span> e, atuamente, <span
-                    class="tecnologias">JavaScript</span>.</p>
-
-            <div class="alinharBtn">
-                <button class="descricao logicaDeProgramacao" onclick="logicaDeProgramacao()">Acessar</button>
-            </div>
-        </div>
-
-        <div class="repositorio">
-            <img class="svg" src="Site/svg/blob3.svg" alt="Blob">
-            <h1 class="titulo descricao">Metodologias Ágeis</h1>
-
-            <p class="descricao">Meu repositório de Metodologias Ágeis, onde aprendemos sobre os métodos ágeis (Lean,
-                XP, Kanban e Scrum), backlogs, sprints, ciclos de produção e outros.</p>
-
-            <div class="alinharBtn">
-                <button class="descricao metodologiasAgeis" onclick="metodologiasAgeis()">Acessar</button>
-            </div>
-        </div>
-    </div>
-
-    <footer id="footer">
-        <a href="https://github.com/Pedroo-Nietoo">
-            <p class="copyright">&copy; 2023 @Pedroo-Nietoo</p>
         </a>
-    </footer>
 
-    <script src="Site/js/botoes.js"></script>
-    <script src="Site/js/titulo.js"></script>
+        <a href="https://www.instagram.com/pedroo_nietoo/" target="_blank">
+        <div class="itemInstagram">
+            <span>Instagram</span>
+        </div>
+        </a>
+
+    </div>
+    <script src="js/aba.js"></script>
+    <script src="js/botoes.js"></script>
 </body>
 
 </html>

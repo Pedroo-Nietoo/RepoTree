@@ -1,0 +1,192 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: url("imgs/FundoPadrao.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body header #fotoPerfil {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  margin-top: -180px;
+}
+body header #username,
+body header #descricao {
+  text-align: center;
+  color: #FFF;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  filter: drop-shadow(0 0 0.75rem #202020);
+}
+body header #username::-moz-selection, body header #descricao::-moz-selection {
+  background-color: #405DE6;
+  color: #FFF;
+}
+body header #username::selection,
+body header #descricao::selection {
+  background-color: #405DE6;
+  color: #FFF;
+}
+body header #descricao {
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+body .container {
+  margin-top: 40vh;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  justify-content: center;
+  height: 50vh;
+  width: 50vw;
+}
+body .container a {
+  text-decoration: none;
+}
+body .container .itemLinkedIn,
+body .container .itemGitHub,
+body .container .itemInstagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 40vw;
+  margin: 20px;
+  border-radius: 2px;
+  color: #525252;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+  background-color: #FFF;
+}
+body .container .itemLinkedIn:hover,
+body .container .itemGitHub:hover,
+body .container .itemInstagram:hover {
+  transform: scale(1.1, 1.1);
+  font-size: 21px;
+  opacity: 100%;
+  transition: 0.5s;
+  color: #FFF;
+}
+body .container .itemLinkedIn:hover {
+  background: linear-gradient(to right, #0077B5, #00BBFF);
+  background-size: 200% 200%;
+  animation: onda ease 5s infinite;
+  filter: drop-shadow(0 0 0.75em #00BBFF);
+}
+body .container .itemGitHub:hover {
+  background: linear-gradient(to right, #211F1F, #9F9F9F);
+  background-size: 200% 200%;
+  animation: onda ease 5s infinite;
+  filter: drop-shadow(0 0 0.75em #9F9F9F);
+}
+body .container .itemInstagram:hover {
+  background: linear-gradient(to right, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+  background-size: 200% 200%;
+  animation: onda ease 5s infinite;
+  filter: drop-shadow(0 0 0.75em #C13584);
+}
+body .container .itemLinkedIn:active,
+body .container .itemGitHub:active,
+body .container .itemInstagram:active {
+  transform: scale(0.9, 0.9);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    height: 80vh;
+    background-image: url("imgs/FundoPadrao.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  body header #fotoPerfil {
+    height: 8rem;
+    width: 8rem;
+    margin-top: -120px;
+  }
+  body header #username {
+    font-size: 24px;
+  }
+  body header #descricao {
+    font-size: 16px;
+    margin-top: -30px;
+  }
+  body .container {
+    margin-top: 20vh;
+    height: 50vh;
+    width: 90vw;
+  }
+  body .container .itemLinkedIn,
+  body .container .itemGitHub,
+  body .container .itemInstagram {
+    height: 8vh;
+    width: 80vw;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 2px;
+  }
+  body .container .itemLinkedIn:hover,
+  body .container .itemGitHub:hover,
+  body .container .itemInstagram:hover {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    height: 80vh;
+    background-image: url("imgs/FundoCelular.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body header #fotoPerfil {
+    height: 8rem;
+    width: 8rem;
+    margin-top: -120px;
+  }
+  body header #username {
+    font-size: 24px;
+  }
+  body header #descricao {
+    font-size: 16px;
+    margin-top: -30px;
+  }
+  body .container {
+    margin-top: 20vh;
+    height: 50vh;
+    width: 90vw;
+  }
+  body .container .itemLinkedIn,
+  body .container .itemGitHub,
+  body .container .itemInstagram {
+    height: 8vh;
+    width: 80vw;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 2px;
+  }
+  body .container .itemLinkedIn:hover,
+  body .container .itemGitHub:hover,
+  body .container .itemInstagram:hover {
+    font-size: 18px;
+  }
+}
+@keyframes onda {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
