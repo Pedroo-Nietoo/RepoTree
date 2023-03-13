@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background-image: url('imgs/FundoPadrao.png');
+  background-image: url('../imgs/FundoPadrao.png');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -35,7 +35,7 @@ body {
     }
 
     #username::selection,
-    #descricao::selection{
+    #descricao::selection {
       background-color: #405DE6;
       color: #FFF;
     }
@@ -65,8 +65,9 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 10px 300px;
+      border: none;
       height: 8vh;
-      width: 40vw;
       margin: 20px;
       border-radius: 2px;
       color: $cinzaEscuroTexto;
@@ -119,7 +120,7 @@ body {
 @media only screen and (max-width: 768px) {
   body {
     height: 80vh;
-    background-image: url('imgs/FundoPadrao.png');
+    background-image: url('../imgs/FundoPadrao.png');
     background-repeat: no-repeat;
     background-size: auto;
 
@@ -167,7 +168,7 @@ body {
 @media only screen and (max-width: 600px) {
   body {
     height: 80vh;
-    background-image: url('imgs/FundoCelular.png');
+    background-image: url('../imgs/FundoCelular.png');
     background-repeat: no-repeat;
     background-size: cover;
 

@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background-image: url("imgs/FundoPadrao.png");
+  background-image: url("../imgs/FundoPadrao.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -57,8 +57,9 @@ body .container .itemInstagram {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 300px;
+  border: none;
   height: 8vh;
-  width: 40vw;
   margin: 20px;
   border-radius: 2px;
   color: #525252;
@@ -104,7 +105,7 @@ body .container .itemInstagram:active {
 @media only screen and (max-width: 768px) {
   body {
     height: 80vh;
-    background-image: url("imgs/FundoPadrao.png");
+    background-image: url("../imgs/FundoPadrao.png");
     background-repeat: no-repeat;
     background-size: auto;
   }
@@ -143,7 +144,7 @@ body .container .itemInstagram:active {
 @media only screen and (max-width: 600px) {
   body {
     height: 80vh;
-    background-image: url("imgs/FundoCelular.png");
+    background-image: url("../imgs/FundoCelular.png");
     background-repeat: no-repeat;
     background-size: cover;
   }

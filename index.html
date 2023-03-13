@@ -17,7 +17,6 @@
 
 <body>
     <div class="container">
-
         <header>
             <img src="imgs/Foto.png" alt="Foto de perfil" id="fotoPerfil" />
             <h1 id="username">Pedro Nieto</h1>
@@ -25,26 +24,12 @@
             <span id="descricao">Entusiasta de programação e eletrônica</span>
         </header>
 
-        <a href="https://www.linkedin.com/in/pedroo-nietoo/" target="_blank">
-            <div class="itemLinkedIn">
-                <span class="textoItem">LinkedIn</span>
-            </div>
-        </a>
-
-        <a href="https://github.com/Pedroo-Nietoo" target="_blank">
-        <div class="itemGitHub">
-            <span>GitHub</span>
-        </div>
-        </a>
-
-        <a href="https://www.instagram.com/pedroo_nietoo/" target="_blank">
-        <div class="itemInstagram">
-            <span>Instagram</span>
-        </div>
-        </a>
-
+        <button class="itemLinkedIn" onclick="abrirLinkedIn()">LinkedIn</button>
+        <button class="itemGitHub" onclick="abrirGitHub()">GitHub</button>
+        <button class="itemInstagram" onclick="abrirInstagram()">Instagram</button>
     </div>
     <script src="js/aba.js"></script>
+    <script src="js/corBotoes.js"></script>
     <script src="js/botoes.js"></script>
 </body>
 
