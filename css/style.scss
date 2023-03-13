@@ -117,7 +117,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   body {
     height: 80vh;
     background-image: url('../imgs/FundoPadrao.png');
@@ -149,8 +149,7 @@ body {
       .itemLinkedIn,
       .itemGitHub,
       .itemInstagram {
-        height: 8vh;
-        width: 80vw;
+        padding: 10px 200px;
         margin: 10px;
         font-size: 16px;
         border-radius: 2px;
@@ -197,9 +196,8 @@ body {
       .itemLinkedIn,
       .itemGitHub,
       .itemInstagram {
-        height: 8vh;
-        width: 80vw;
-        margin: 10px;
+        padding: 20px 150px;
+        margin: 15px;
         font-size: 16px;
         border-radius: 2px;
       }
