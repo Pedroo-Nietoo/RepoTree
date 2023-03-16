@@ -2,45 +2,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 115vh;
   background-image: url("../imgs/FundoPadrao.png");
+  background-color: #0077b5;
   background-repeat: no-repeat;
   background-size: cover;
 }
-body header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-body header #fotoPerfil {
-  border-radius: 50%;
-  height: 10rem;
-  width: 10rem;
-  margin-top: -180px;
-}
-body header #username,
-body header #descricao {
-  text-align: center;
-  color: #FFF;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  filter: drop-shadow(0 0 0.75rem #202020);
-}
-body header #username::-moz-selection, body header #descricao::-moz-selection {
-  background-color: #405DE6;
-  color: #FFF;
-}
-body header #username::selection,
-body header #descricao::selection {
-  background-color: #405DE6;
-  color: #FFF;
-}
-body header #descricao {
-  margin-top: -40px;
-  margin-bottom: 40px;
-}
 body .container {
-  margin-top: 40vh;
+  margin-top: 350px;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 3;
@@ -50,6 +19,38 @@ body .container {
 }
 body .container a {
   text-decoration: none;
+}
+body .container header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .container header #fotoPerfil {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  margin-top: -180px;
+}
+body .container header #username,
+body .container header #descricao {
+  text-align: center;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  filter: drop-shadow(0 0 0.75rem #202020);
+}
+body .container header #username::-moz-selection, body .container header #descricao::-moz-selection {
+  background-color: #405de6;
+  color: #fff;
+}
+body .container header #username::selection,
+body .container header #descricao::selection {
+  background-color: #405de6;
+  color: #fff;
+}
+body .container header #descricao {
+  margin-top: -40px;
+  margin-bottom: 40px;
 }
 body .container .itemLinkedIn,
 body .container .itemGitHub,
@@ -67,7 +68,7 @@ body .container .itemInstagram {
   font-size: 20px;
   font-weight: 600;
   transition: 0.5s;
-  background-color: #FFF;
+  background-color: #fff;
 }
 body .container .itemLinkedIn:hover,
 body .container .itemGitHub:hover,
@@ -76,38 +77,85 @@ body .container .itemInstagram:hover {
   font-size: 21px;
   opacity: 100%;
   transition: 0.5s;
-  color: #FFF;
+  color: #fff;
 }
 body .container .itemLinkedIn:hover {
-  background: linear-gradient(to right, #0077B5, #00BBFF);
+  background: linear-gradient(to right, #0077b5, #00bbff);
   background-size: 200% 200%;
   animation: onda ease 5s infinite;
-  filter: drop-shadow(0 0 0.75em #00BBFF);
+  filter: drop-shadow(0 0 0.75em #00bbff);
 }
 body .container .itemGitHub:hover {
-  background: linear-gradient(to right, #211F1F, #9F9F9F);
+  background: linear-gradient(to right, #211f1f, #9f9f9f);
   background-size: 200% 200%;
   animation: onda ease 5s infinite;
-  filter: drop-shadow(0 0 0.75em #9F9F9F);
+  filter: drop-shadow(0 0 0.75em #9f9f9f);
 }
 body .container .itemInstagram:hover {
-  background: linear-gradient(to right, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+  background: linear-gradient(to right, #405de6, #5b51d8, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
   background-size: 200% 200%;
   animation: onda ease 5s infinite;
-  filter: drop-shadow(0 0 0.75em #C13584);
+  filter: drop-shadow(0 0 0.75em #c13584);
 }
 body .container .itemLinkedIn:active,
 body .container .itemGitHub:active,
 body .container .itemInstagram:active {
   transform: scale(0.9, 0.9);
 }
+body .card {
+  margin: auto;
+  margin-top: 10px;
+  width: 80%;
+  width: 340px;
+  height: 350px;
+  padding: 0 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  background: transparent;
+  border-radius: 20px;
+}
+body .card > * {
+  margin: 0;
+}
+body .tituloCard {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 23px;
+  font-weight: 900;
+  color: #fff;
+  filter: drop-shadow(0 0 0.9rem #000);
+}
+body .conteudoCard {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 0.9rem #000);
+}
+body .btnAssinar {
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 14px;
+  transition: 0.5s;
+}
+body .btnAssinar:hover {
+  transform: scale(1.1, 1.1);
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  transition: 0.5s;
+}
 
 @media only screen and (max-width: 1000px) {
   body {
-    height: 80vh;
+    height: 160vh;
     background-image: url("../imgs/FundoPadrao.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
   }
   body header #fotoPerfil {
     height: 8rem;
@@ -142,27 +190,27 @@ body .container .itemInstagram:active {
 }
 @media only screen and (max-width: 600px) {
   body {
-    height: 80vh;
+    height: 135vh;
     background-image: url("../imgs/FundoCelular.png");
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  body header #fotoPerfil {
-    height: 8rem;
-    width: 8rem;
-    margin-top: -120px;
-  }
-  body header #username {
-    font-size: 24px;
-  }
-  body header #descricao {
-    font-size: 16px;
-    margin-top: -30px;
   }
   body .container {
     margin-top: 20vh;
     height: 50vh;
     width: 90vw;
+  }
+  body .container header #fotoPerfil {
+    height: 8rem;
+    width: 8rem;
+    margin-top: -120px;
+  }
+  body .container header #username {
+    font-size: 24px;
+  }
+  body .container header #descricao {
+    font-size: 16px;
+    margin-top: -30px;
   }
   body .container .itemLinkedIn,
   body .container .itemGitHub,
@@ -188,4 +236,21 @@ body .container .itemInstagram:active {
   100% {
     background-position: 0% 50%;
   }
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #008fdb;
+  border-radius: 10px;
+  border: 2px solid #FFF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0077b5;
 }/*# sourceMappingURL=style.css.map */

@@ -16,17 +16,27 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <img src="imgs/Foto.png" alt="Foto de perfil" id="fotoPerfil" />
-            <h1 id="username">Pedro Nieto</h1>
-            <br>
-            <span id="descricao">Entusiasta de programação e eletrônica</span>
-        </header>
+    <div class="mainContainer">
+        <div class="container">
+            <header>
+                <img src="imgs/Foto.png" alt="Foto de perfil" id="fotoPerfil" />
+                <h1 id="username">Pedro Nieto</h1>
+                <br>
+                <span id="descricao">Entusiasta de programação e eletrônica</span>
+            </header>
 
-        <button class="itemLinkedIn" onclick="abrirLinkedIn()">LinkedIn</button>
-        <button class="itemGitHub" onclick="abrirGitHub()">GitHub</button>
-        <button class="itemInstagram" onclick="abrirInstagram()">Instagram</button>
+            <button class="itemLinkedIn btn1" onclick="abrirLinkedIn()">LinkedIn</button>
+            <button class="itemGitHub btn2" onclick="abrirGitHub()">GitHub</button>
+            <button class="itemInstagram btn3" onclick="abrirInstagram()">Instagram</button>
+        </div>
+
+        <div class="card">
+            <span class="tituloCard">Newsletter</span>
+            <p class="conteudoCard">Inscreva-se na minha Newsletter sobre fatos, curiosidades, pesquisas, debates e
+                diversos outros assuntos do ramo da tecnologia!</p>
+
+            <button class="btnAssinar" onclick="assinarNewsletter()"> Assinar</button>
+        </div>
     </div>
     <script src="js/aba.js"></script>
     <script src="js/corBotoes.js"></script>
