@@ -3,19 +3,17 @@ $fontePadrao: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 $cinzaEscuroTexto: #525252;
 $corLinkedIn: linear-gradient(to right, #0077b5, #00bbff);
 $corGitHub: linear-gradient(to right, #211f1f, #9f9f9f);
-$corInstagram: linear-gradient(
-  to right,
-  #405de6,
-  #5b51d8,
-  #833ab4,
-  #c13584,
-  #e1306c,
-  #fd1d1d,
-  #f56040,
-  #f77737,
-  #fcaf45,
-  #ffdc80
-);
+$corInstagram: linear-gradient(to right,
+    #405de6,
+    #5b51d8,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80);
 
 body {
   display: flex;
@@ -26,6 +24,7 @@ body {
   background-color: #0077b5;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 
   .container {
     margin-top: 350px;
@@ -147,7 +146,7 @@ body {
     border-radius: 20px;
   }
 
-  .card > * {
+  .card>* {
     margin: 0;
   }
 
@@ -182,14 +181,19 @@ body {
     color: #fff;
     transition: 0.5s;
   }
+
+  .btnAssinar:active {
+    transform: scale(0.9, 0.9);
+  }
 }
 
 @media only screen and (max-width: 1000px) {
   body {
-    height: 160vh;
+    height: 110vh;
     background-image: url("../imgs/FundoPadrao.png");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 
     header {
       #fotoPerfil {
@@ -233,15 +237,16 @@ body {
 
 @media only screen and (max-width: 600px) {
   body {
-    height: 135vh;
+    height: 150vh;
     background-image: url("../imgs/FundoCelular.png");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 
     .container {
       margin-top: 20vh;
       height: 50vh;
-      width: 90vw;
+      width: 150vw;
 
       header {
         #fotoPerfil {
@@ -255,7 +260,7 @@ body {
         }
 
         #descricao {
-          font-size: 16px;
+          font-size: 14px;
           margin-top: -30px;
         }
       }
@@ -263,7 +268,7 @@ body {
       .itemLinkedIn,
       .itemGitHub,
       .itemInstagram {
-        padding: 20px 150px;
+        padding: 8px 16px;
         margin: 15px;
         font-size: 16px;
         border-radius: 2px;
@@ -274,6 +279,39 @@ body {
       .itemInstagram:hover {
         font-size: 18px;
       }
+    }
+
+    .card {
+      margin: auto;
+      margin-top: 10px;
+      width: 250px;
+      height: 350px;
+      padding: 0 15px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+      background: transparent;
+      border-radius: 20px;
+    }
+
+    .tituloCard {
+      font-family: $fontePadrao;
+      font-size: 20px;
+      font-weight: 900;
+      color: #fff;
+      filter: drop-shadow(0 0 0.9rem #000);
+    }
+
+    .conteudoCard {
+      font-family: $fontePadrao;
+      font-size: 15px;
+      line-height: 18px;
+      color: #fff;
+      margin-bottom: 15px;
+      filter: drop-shadow(0 0 0.9rem #000);
     }
   }
 }
@@ -297,13 +335,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #008fdb;
   border-radius: 10px;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
 }
 
 ::-webkit-scrollbar-thumb:hover {

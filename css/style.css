@@ -7,7 +7,9 @@ body {
   background-color: #0077b5;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
+
 body .container {
   margin-top: 350px;
   display: grid;
@@ -17,21 +19,25 @@ body .container {
   height: 50vh;
   width: 50vw;
 }
+
 body .container a {
   text-decoration: none;
 }
+
 body .container header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 body .container header #fotoPerfil {
   border-radius: 50%;
   height: 10rem;
   width: 10rem;
   margin-top: -180px;
 }
+
 body .container header #username,
 body .container header #descricao {
   text-align: center;
@@ -39,19 +45,24 @@ body .container header #descricao {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   filter: drop-shadow(0 0 0.75rem #202020);
 }
-body .container header #username::-moz-selection, body .container header #descricao::-moz-selection {
+
+body .container header #username::-moz-selection,
+body .container header #descricao::-moz-selection {
   background-color: #405de6;
   color: #fff;
 }
+
 body .container header #username::selection,
 body .container header #descricao::selection {
   background-color: #405de6;
   color: #fff;
 }
+
 body .container header #descricao {
   margin-top: -40px;
   margin-bottom: 40px;
 }
+
 body .container .itemLinkedIn,
 body .container .itemGitHub,
 body .container .itemInstagram {
@@ -70,6 +81,7 @@ body .container .itemInstagram {
   transition: 0.5s;
   background-color: #fff;
 }
+
 body .container .itemLinkedIn:hover,
 body .container .itemGitHub:hover,
 body .container .itemInstagram:hover {
@@ -79,29 +91,34 @@ body .container .itemInstagram:hover {
   transition: 0.5s;
   color: #fff;
 }
+
 body .container .itemLinkedIn:hover {
   background: linear-gradient(to right, #0077b5, #00bbff);
   background-size: 200% 200%;
   animation: onda ease 5s infinite;
   filter: drop-shadow(0 0 0.75em #00bbff);
 }
+
 body .container .itemGitHub:hover {
   background: linear-gradient(to right, #211f1f, #9f9f9f);
   background-size: 200% 200%;
   animation: onda ease 5s infinite;
   filter: drop-shadow(0 0 0.75em #9f9f9f);
 }
+
 body .container .itemInstagram:hover {
   background: linear-gradient(to right, #405de6, #5b51d8, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
   background-size: 200% 200%;
   animation: onda ease 5s infinite;
   filter: drop-shadow(0 0 0.75em #c13584);
 }
+
 body .container .itemLinkedIn:active,
 body .container .itemGitHub:active,
 body .container .itemInstagram:active {
   transform: scale(0.9, 0.9);
 }
+
 body .card {
   margin: auto;
   margin-top: 10px;
@@ -118,9 +135,11 @@ body .card {
   background: transparent;
   border-radius: 20px;
 }
-body .card > * {
+
+body .card>* {
   margin: 0;
 }
+
 body .tituloCard {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 23px;
@@ -128,6 +147,7 @@ body .tituloCard {
   color: #fff;
   filter: drop-shadow(0 0 0.9rem #000);
 }
+
 body .conteudoCard {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 15px;
@@ -136,12 +156,14 @@ body .conteudoCard {
   margin-bottom: 15px;
   filter: drop-shadow(0 0 0.9rem #000);
 }
+
 body .btnAssinar {
   border: 0;
   padding: 10px 30px;
   border-radius: 14px;
   transition: 0.5s;
 }
+
 body .btnAssinar:hover {
   transform: scale(1.1, 1.1);
   border: 1px solid #fff;
@@ -150,30 +172,40 @@ body .btnAssinar:hover {
   transition: 0.5s;
 }
 
+body .btnAssinar:active {
+  transform: scale(0.9, 0.9);
+}
+
 @media only screen and (max-width: 1000px) {
   body {
-    height: 160vh;
+    height: 110vh;
     background-image: url("../imgs/FundoPadrao.png");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
   }
+
   body header #fotoPerfil {
     height: 8rem;
     width: 8rem;
     margin-top: -120px;
   }
+
   body header #username {
     font-size: 24px;
   }
+
   body header #descricao {
     font-size: 16px;
     margin-top: -30px;
   }
+
   body .container {
     margin-top: 20vh;
     height: 50vh;
     width: 90vw;
   }
+
   body .container .itemLinkedIn,
   body .container .itemGitHub,
   body .container .itemInstagram {
@@ -182,75 +214,123 @@ body .btnAssinar:hover {
     font-size: 16px;
     border-radius: 2px;
   }
+
   body .container .itemLinkedIn:hover,
   body .container .itemGitHub:hover,
   body .container .itemInstagram:hover {
     font-size: 18px;
   }
 }
+
 @media only screen and (max-width: 600px) {
   body {
-    height: 135vh;
+    height: 150vh;
     background-image: url("../imgs/FundoCelular.png");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
   }
+
   body .container {
     margin-top: 20vh;
     height: 50vh;
-    width: 90vw;
+    width: 150vw;
   }
+
   body .container header #fotoPerfil {
     height: 8rem;
     width: 8rem;
     margin-top: -120px;
   }
+
   body .container header #username {
     font-size: 24px;
   }
+
   body .container header #descricao {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: -30px;
   }
+
   body .container .itemLinkedIn,
   body .container .itemGitHub,
   body .container .itemInstagram {
-    padding: 20px 150px;
+    padding: 8px 16px;
     margin: 15px;
     font-size: 16px;
     border-radius: 2px;
   }
+
   body .container .itemLinkedIn:hover,
   body .container .itemGitHub:hover,
   body .container .itemInstagram:hover {
     font-size: 18px;
   }
+
+  body .card {
+    margin: auto;
+    margin-top: 10px;
+    width: 250px;
+    height: 350px;
+    padding: 0 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    background: transparent;
+    border-radius: 20px;
+  }
+
+  body .tituloCard {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    filter: drop-shadow(0 0 0.9rem #000);
+  }
+
+  body .conteudoCard {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 0.9rem #000);
+  }
 }
+
 @keyframes onda {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
+
 ::-webkit-scrollbar {
   width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #008fdb;
   border-radius: 10px;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #0077b5;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
