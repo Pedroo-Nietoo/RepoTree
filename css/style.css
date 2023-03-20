@@ -82,6 +82,20 @@ body .container .itemInstagram {
   background-color: #fff;
 }
 
+body .container .itemLinkedIn::-moz-selection,
+body .container .itemGitHub::-moz-selection,
+body .container .itemInstagram::-moz-selection {
+  background-color: #405de6;
+  color: #fff;
+}
+
+body .container .itemLinkedIn::selection,
+body .container .itemGitHub::selection,
+body .container .itemInstagram::selection {
+  background-color: #405de6;
+  color: #fff;
+}
+
 body .container .itemLinkedIn:hover,
 body .container .itemGitHub:hover,
 body .container .itemInstagram:hover {
@@ -162,6 +176,20 @@ body .btnAssinar {
   padding: 10px 30px;
   border-radius: 14px;
   transition: 0.5s;
+}
+
+body .tituloCard::-moz-selection,
+body .conteudoCard::-moz-selection,
+body .btnAssinar::-moz-selection {
+  background-color: #405de6;
+  color: #fff;
+}
+
+body .tituloCard::selection,
+body .conteudoCard::selection,
+body .btnAssinar::selection {
+  background-color: #405de6;
+  color: #fff;
 }
 
 body .btnAssinar:hover {

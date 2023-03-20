@@ -91,6 +91,13 @@ body {
       background-color: #fff;
     }
 
+    .itemLinkedIn::selection,
+    .itemGitHub::selection,
+    .itemInstagram::selection {
+      background-color: #405de6;
+      color: #fff;
+    }
+
     .itemLinkedIn:hover,
     .itemGitHub:hover,
     .itemInstagram:hover {
@@ -172,6 +179,13 @@ body {
     padding: 10px 30px;
     border-radius: 14px;
     transition: 0.5s;
+  }
+
+  .tituloCard::selection,
+  .conteudoCard::selection,
+  .btnAssinar::selection {
+    background-color: #405de6;
+    color: #fff;
   }
 
   .btnAssinar:hover {
